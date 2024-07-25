@@ -8,7 +8,8 @@ enum class EGameVersionRestriction : uint8 {
     GVR_Base,
     GVR_Supporter,
     GVR_PreorderBonus,
-    GVR_Demo,
-    GVR_MAX
+    GVR_HomeInvasion,
+    GVR_Maritime,
+    GVR_Demo = 255,
 };
 
