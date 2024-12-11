@@ -1,24 +1,20 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "CustomizationDataBase.h"
-#include "CustomizationBlueprint.generated.h"
+#include "CustomizationConditionalMaterial.generated.h"
 
-class AActor;
-
-UCLASS(Blueprintable)
-class READYORNOT_API UCustomizationBlueprint : public UCustomizationDataBase {
+USTRUCT(BlueprintType)
+struct FCustomizationConditionalMaterial {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    TSoftClassPtr<AActor> BlueprintClass;
+    int32 Slot;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    bool bTickInThirdPerson;
+    FName RequiredTag;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    FName Socket;
+    bool bInvertCondition;
     
-    UCustomizationBlueprint();
-
+    READYORNOT_API FCustomizationConditionalMaterial();
 };
 

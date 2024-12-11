@@ -28,5 +28,6 @@ public:
     TSoftObjectPtr<UTexture2D> ProfileImage;
     
     UCustomizationCharacter();
+
 };
 

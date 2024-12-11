@@ -4,9 +4,9 @@ using UnrealBuildTool;
 
 public class ReadyOrNot : ModuleRules
 {
-	public ReadyOrNot(ReadOnlyTargetRules Target) : base(Target)
-	{
-		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
+    public ReadyOrNot(ReadOnlyTargetRules Target) : base(Target)
+    {
+        PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
         PublicDependencyModuleNames.AddRange(
             new string[]
@@ -16,7 +16,7 @@ public class ReadyOrNot : ModuleRules
                 "Engine",
                 "Slate",
                 "SlateCore",
-			}
+            }
             );
 
         PrivateDependencyModuleNames.AddRange(
@@ -26,7 +26,7 @@ public class ReadyOrNot : ModuleRules
                 "Engine",
                 "Slate",
                 "SlateCore",
-			}
+            }
             );
     }
 }

@@ -8,5 +8,6 @@ class READYORNOT_API UCustomizationEmpty : public UCustomizationDataBase {
     GENERATED_BODY()
 public:
     UCustomizationEmpty();
+
 };
 

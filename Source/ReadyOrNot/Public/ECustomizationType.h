@@ -19,7 +19,9 @@ enum class ECustomizationType : uint8 {
     PrimarySkin,
     SecondarySkin,
     ArmorSkin,
-    HeadwearSkin,
+    HelmetSkin,
+    HelmetMountSkin,
+    FacewearSkin,
     Any,
 };
 

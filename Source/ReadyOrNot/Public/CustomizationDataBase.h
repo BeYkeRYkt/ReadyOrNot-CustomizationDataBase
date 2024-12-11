@@ -5,6 +5,7 @@
 #include "CustomizationDataBase.generated.h"
 
 class UCustomizationDataBase;
+class UCustomizationSocket;
 class UMaterialInterface;
 class UTexture2D;
 
@@ -51,6 +52,10 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<EGameVersionRestriction> LockedToDLC;
     
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
+    TArray<UCustomizationSocket*> Extras;
+    
     UCustomizationDataBase();
+
 };
 

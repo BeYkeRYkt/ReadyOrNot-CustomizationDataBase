@@ -4,3 +4,4 @@ UCustomizationSkeletalMesh::UCustomizationSkeletalMesh() {
     this->bUseMasterPose = true;
 }
 
+

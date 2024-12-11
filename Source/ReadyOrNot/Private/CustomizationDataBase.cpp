@@ -7,3 +7,4 @@ UCustomizationDataBase::UCustomizationDataBase() {
     this->bShowInLoadout = true;
 }
 
+

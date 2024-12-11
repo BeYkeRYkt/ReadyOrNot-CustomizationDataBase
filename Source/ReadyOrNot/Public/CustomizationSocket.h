@@ -1,31 +1,29 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "CustomizationDataBase.h"
-#include "CustomizationMaterialSlot.h"
-#include "CustomizationSkin.generated.h"
+#include "CustomizationSocket.generated.h"
 
-class USkeletalMesh;
+class ACustomizationExtra;
 
-UCLASS(Blueprintable)
-class READYORNOT_API UCustomizationSkin : public UCustomizationDataBase {
+UCLASS(Blueprintable, DefaultToInstanced, EditInlineNew)
+class READYORNOT_API UCustomizationSocket : public UObject {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    TArray<FName> CompatibleItemTags;
+    TSoftClassPtr<ACustomizationExtra> ActorClass;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    TSoftObjectPtr<USkeletalMesh> MeshOverride;
+    FName AttachSocket;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    TArray<FCustomizationMaterialSlot> MaterialSlots;
+    FVector RelativeLocation;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    bool bUseSocketOverride;
+    FRotator RelativeRotation;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    FName SocketOverride;
+    FVector RelativeScale;
     
-    UCustomizationSkin();
+    UCustomizationSocket();
 
 };
 

@@ -26,5 +26,6 @@ public:
     TMap<FName, FName> SocketOverridesMap;
     
     UCustomizationSkeletalMesh();
+
 };
 

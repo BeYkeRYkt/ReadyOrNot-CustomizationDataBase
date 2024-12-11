@@ -4,3 +4,4 @@ UCustomizationCharacter::UCustomizationCharacter() {
     this->HairMaterialIndex = -1;
 }
 
+
