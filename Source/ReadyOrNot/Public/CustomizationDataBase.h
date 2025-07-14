@@ -47,6 +47,9 @@ public:
     TSet<ECustomizationType> TypesToHide;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    TSet<TSoftObjectPtr<UCustomizationDataBase>> CustomizationOverrides;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bShowInLoadout;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
