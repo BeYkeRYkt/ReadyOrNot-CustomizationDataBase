@@ -10,7 +10,7 @@
 	"DocsURL": "",
 	"MarketplaceURL": "",
 	"SupportURL": "https://github.com/beykerykt/ReadyOrNot-CustomizationDataBase/",
-	"CanContainContent": false,
+	"CanContainContent": true,
 	"IsBetaVersion": true,
 	"IsExperimentalVersion": false,
 	"Installed": false,
